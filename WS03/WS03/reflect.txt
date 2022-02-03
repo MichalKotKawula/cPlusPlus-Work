@@ -1,0 +1,29 @@
+//*************************************************//
+//
+// Michal Kot-Kawula
+// Seneca email: mkot-kawula@myseneca.ca
+// Seneca Student ID: 128945193
+// Date: 10/3/2021
+//
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+//
+//*************************************************//
+
+After completing this workshop I have gained the knowledge to successfully design and code a class template as Pair, Set, and their instances of SetSummable and PariSummable. 
+I have also defined template class variables such as "templArr[N];" and "currentNumElem".
+Specializing a member function of a templated class has been my favorite experience because it allowed me to process a particular type of function, showcasing the advancement of C++.
+ 
+In this workshop, I have struggled with the successful completion of operator+=() specialization because of its use of concatenation and storage by using ", " or "+."
+After using trial and error with some parts of the code to determine if the value was empty or not I came up with a successful solution.
+
+1. In order for the template to be instantiated, it needs to be implemented in a header file to be accessible to the compiler.
+All template definitions should be done in header files.
+
+2. The "=initial" prototype in function "PairSummable(const K& key, const V& value = initial)" means that the variable has a default initializer of typename V; 
+
+3. Template specialization allows us to specialize only in some arguments of a class template. 
+Because of string concatenation in the main file, we declare our own types instead of original ones.
+
+4. We don't need to specialize the initial value of the summation because the summation is a collection of all entered values into the program.
+
+5. We define class variables outside the class definition because we have static variables in our program to make it more efficient.

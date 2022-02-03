@@ -1,0 +1,24 @@
+//*************************************************//
+//
+// Michal Kot-Kawula
+// Seneca email: mkot-kawula@myseneca.ca
+// Seneca Student ID: 128945193
+// Date: 9/26/2021
+//
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+//
+//*************************************************//
+
+
+After completing this workshop I have gained the ability to retrive records from text files using input file stream object such as "StringSet::StringSet(const char* theString)" where I retrived lines from the Gutenberg Shakespare file.
+I have also expanded my knowledge about the implementation of the std::chrono library, which surprised me with it's nanosecond accuracy, and interesting implementation in our workshop.
+It is definetly a handy tool when evaluatung code efficency within advanced programs witch contain massive amounts of data to transfer. 
+
+During this workshop, I have encountered difficulties with "StringSet" function which used file stream objects.
+It was my first time using more advanced stream object functions of the fstream library and it took me a while to get a hold of them.
+By reading the library documentation on cplusplus reference site I solved most of my issues.
+
+
+1. The reason for the significant time difference between copy "StringSet& StringSet:: operator=(const StringSet& s)" and move "StringSet& StringSet::operator=(StringSet&& pass)"
+operations is due to the address of the resources getting reasigned from one to another, without using as much memory as copying.
+Copying takes up more memory to copy old object to new object, therefore it's slower. 
