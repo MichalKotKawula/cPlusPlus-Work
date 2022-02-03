@@ -1,0 +1,26 @@
+//*************************************************//
+//
+// Michal Kot-Kawula
+// Seneca email: mkot-kawula@myseneca.ca
+// Seneca Student ID: 128945193
+// Date: 10/10/2021
+//
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+//
+//*************************************************//
+
+
+After completing this workshop I have learned to implement an aggregation and composition class relationship as Reservation, Restaurant and ConfirmSender.
+I have also discovered how to parse strings through erase(), find_first_not_of(), find_last_not_of() and substr() exclusively in the Reservation constructor.
+I ran into a few problems with these functions but through proper understanding of the documentation of those functions I was able to solve my problem.
+
+1. The difference between the implementations of a composition and an aggregation is that a composition is a part of a relationship while aggregation has a relationship.
+A composition handles it's own resources, therefore obects life is determined by function.
+Data members exist directly as part of the struct/class, their lifetimes are bound to that of the class instance itself.
+An aggregation doesn't handle it's own resources and the objects life is not determined by the function.
+Member variables are typically either references or pointers that are used to point at objects that have been created outside the scope of the class.
+Because members exist outside of the scope of the class, when the class is destroyed, the pointer or reference member variable will be destroyed (but not deleted).
+
+2.The difference between the implementations of move and copy functions in a composition and an aggregation narrows down to the fact that in composition we cannot move or copy an object once it's deleted.
+Because of that we need to make a copy of the object, while in aggregation the object determines it's ownlifetime we can copy the adress to the current object.
+

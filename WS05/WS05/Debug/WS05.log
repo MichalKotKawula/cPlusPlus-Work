@@ -1,0 +1,7 @@
+﻿  Book.cpp
+  Movie.cpp
+  SpellChecker.cpp
+  w5_p2.cpp
+C:\Users\mckkm\Desktop\Btp305\WS05\WS05\w5_p2.cpp(242,26): warning C4101: 'exc': unreferenced local variable
+  Generating Code...
+  WS05.vcxproj -> C:\Users\mckkm\Desktop\Btp305\WS05\WS05\Debug\WS05.exe
