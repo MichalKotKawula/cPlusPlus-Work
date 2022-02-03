@@ -1,0 +1,21 @@
+//*************************************************//
+//
+// Michal Kot-Kawula
+// Seneca email: mkot-kawula@myseneca.ca
+// Seneca Student ID: 128945193
+// Date: 11/14/2021
+//
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+//
+//*************************************************//
+
+After completing this workshop I have gained abilities to effectively implement lambda functions to make my programming life easier. 
+I once again had the possibility to play with substrings, which I was not as confident with. 
+Throughout using the algorithm library I was able to understand some of its effective predefined functions.
+
+1. During this workshop I have used the following functions: std::accumalate since it was useful with accumulating the total time of songs, std::sort was useful when sorting the collection of songs in ascending order, std::copy_if was useful for copying songs that had to be in the collection, std::for_each was helpful when for iterating through vector.
+
+2. Throughout using STL algorithms we are able to save time programming and future processes. 
+Lambda functions take up less space, making the code look clean and ready for adjustments. 
+
+3. The function can do a check by using an if statement for the error, then throw an exception message with the error name;

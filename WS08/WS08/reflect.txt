@@ -1,0 +1,29 @@
+
+
+After completing this workshop I have learned how to effectively use smart and raw pointers. 
+It was an interesting experience because it showcased me a way to work more effectively when i don't need to handle memory myself. 
+I was also given an opportunity to create a program component with quadratic complexity, which was done by we are passing over the same list twice with each search.
+
+1. The most significant adavntage of using smart pointer syntax is the automatic handling of allocating and deacllocating memory.
+There is no need for the programmer to worry about deallocating memory or related memory possible leaks. 
+Smart pointers will also automatically be set to nullptr when not initialized or when not in use.
+
+Raw pointer example:
+Product* my_point = new Product(desc[i].desc, price[b].price);
+					my_point->validate();
+					priceList += my_point;
+					
+Smart pointer example:
+std::unique_ptr<Product> uqPtr(new Product(desc[i].desc, price[b].price));
+					uqPtr->validate();
+					priceList += uqPtr;
+
+As we can see there is no need to delete the pointer in the smart example vs last line of raw where delete my_point is written.
+
+2. The syntatical difference between a raw pointer is as follows:  
+
+Raw:
+void operator +=(const T* ptr)
+
+Smart:
+void operator +=(const std::unique_ptr<T>& ptr)
